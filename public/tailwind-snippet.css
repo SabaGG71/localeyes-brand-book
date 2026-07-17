@@ -1,0 +1,21 @@
+/* Tailwind v4 — paste into globals.css, after @import "tailwindcss"; */
+@import "./tokens.css";
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-gold: var(--gold);
+  --color-gold-hover: var(--gold-hover);
+  --color-gold-deep: var(--gold-deep);
+  --color-mut: var(--mut);
+  --color-mut-ink: var(--mut-ink);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  --radius-pill: var(--radius-pill);
+  --radius-card: var(--radius-card);
+}
+
+/* Usage: bg-paper, bg-ink, text-gold, border-gold, font-display, font-body … */

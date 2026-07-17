@@ -1,0 +1,156 @@
+{
+  "brand": {
+    "name": "Localeyes",
+    "monogram": "LE",
+    "version": "v1.0",
+    "tagline": "Editorial luxury, kept honest."
+  },
+  "colors": {
+    "paper": {
+      "value": "#ededd5",
+      "cssVariable": "--paper",
+      "usage": "Primary cream background for light sections."
+    },
+    "paperDeep": {
+      "value": "#e6e3cd",
+      "cssVariable": "--paper-deep",
+      "usage": "Slightly deeper cream for alternating sections and recessed panels."
+    },
+    "ink": {
+      "value": "#261f15",
+      "cssVariable": "--ink",
+      "usage": "All body text on light backgrounds; also used as the dark section background."
+    },
+    "gold": {
+      "value": "#a67c3d",
+      "cssVariable": "--gold",
+      "usage": "Primary accent. Use sparingly — buttons, rules, ornament, small highlights."
+    },
+    "goldHover": {
+      "value": "#8f6a32",
+      "cssVariable": "--gold-hover",
+      "usage": "Hover / active state for gold-filled elements."
+    },
+    "goldDeep": {
+      "value": "#7a5a2a",
+      "cssVariable": "--gold-deep",
+      "usage": "Accent text on light backgrounds where standard gold fails contrast."
+    },
+    "mut": {
+      "value": "rgba(38,31,21,0.6)",
+      "cssVariable": "--mut",
+      "usage": "Secondary / muted text on cream backgrounds."
+    },
+    "paperOnInk": {
+      "value": "#ededd5",
+      "cssVariable": "--paper",
+      "usage": "Body text color used on dark ink section backgrounds."
+    },
+    "mutOnInk": {
+      "value": "rgba(237,237,213,0.6)",
+      "cssVariable": "--mut-ink",
+      "usage": "Secondary / muted text on dark ink backgrounds."
+    }
+  },
+  "fonts": {
+    "display": {
+      "label": "Display",
+      "stack": "var(--font-ivypresto, \"IvyPresto Headline\"), var(--font-fraunces), Georgia, serif",
+      "css": "--font-display",
+      "note": "IvyPresto Headline, licensed and loaded locally from src/brand/fonts. Fraunces is the fallback for contexts where the licensed files aren’t available (e.g. the downloaded tokens.css)."
+    },
+    "body": {
+      "label": "Body / UI",
+      "stack": "var(--font-manrope), Arial, sans-serif",
+      "css": "--font-body",
+      "note": "Manrope for all UI, body copy, and labels."
+    }
+  },
+  "typeScale": {
+    "displayXl": {
+      "fontSize": "clamp(3.25rem, 3rem + 4vw, 7.5rem)",
+      "lineHeight": "1.04",
+      "letterSpacing": "-0.02em",
+      "fontWeight": 300,
+      "family": "display"
+    },
+    "display": {
+      "fontSize": "clamp(2.5rem, 2.3rem + 2vw, 4.5rem)",
+      "lineHeight": "1.06",
+      "letterSpacing": "-0.02em",
+      "fontWeight": 300,
+      "family": "display"
+    },
+    "h2": {
+      "fontSize": "clamp(2rem, 1.85rem + 1vw, 3rem)",
+      "lineHeight": "1.08",
+      "letterSpacing": "-0.015em",
+      "fontWeight": 400,
+      "family": "display"
+    },
+    "h3": {
+      "fontSize": "clamp(1.375rem, 1.3rem + 0.5vw, 2rem)",
+      "lineHeight": "1.12",
+      "letterSpacing": "-0.01em",
+      "fontWeight": 400,
+      "family": "display"
+    },
+    "body": {
+      "fontSize": "1rem",
+      "lineHeight": "1.6",
+      "letterSpacing": "0em",
+      "fontWeight": 400,
+      "family": "body"
+    },
+    "small": {
+      "fontSize": "0.875rem",
+      "lineHeight": "1.5",
+      "letterSpacing": "0em",
+      "fontWeight": 400,
+      "family": "body"
+    },
+    "eyebrow": {
+      "fontSize": "0.6875rem",
+      "lineHeight": "1",
+      "letterSpacing": "0.28em",
+      "fontWeight": 800,
+      "family": "body"
+    }
+  },
+  "motion": {
+    "easing": {
+      "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "css": "--ease",
+      "label": "Signature ease"
+    },
+    "duration": {
+      "fast": {
+        "value": "0.45s",
+        "css": "--dur-fast"
+      },
+      "slow": {
+        "value": "0.7s",
+        "css": "--dur-slow"
+      }
+    },
+    "button": {
+      "label": "Signature button",
+      "description": "Gold pill with a circular ink chip holding an arrow. On hover, the ink circle floods the pill (scale ~12), the chip inverts to gold, and the arrow rotates 45°. Transform and color only — never layout.",
+      "chipScale": 12,
+      "arrowRotate": "45deg"
+    }
+  },
+  "layout": {
+    "maxWidth": "1480px",
+    "gutterX": "1.5rem",
+    "gutterXMd": "3rem",
+    "radiusPill": "999px",
+    "radiusCard": "1.25rem"
+  },
+  "texture": {
+    "grainAlpha": 0.11,
+    "hairlineOpacity": 0.12,
+    "goldAura": "radial-gradient(circle at 50% 0%, rgba(166,124,61,0.08), transparent 60%)",
+    "cardShadow": "0 32px 64px -20px rgba(0,0,0,0.55)"
+  }
+}
